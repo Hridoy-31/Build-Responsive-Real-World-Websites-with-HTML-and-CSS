@@ -1,33 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 h1 {
   font-size: 36px;
-  font-family: sans-serif;
   font-style: italic;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
 }
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
 }
 
 h4 {
   font-size: 25px;
-  font-family: sans-serif;
   text-align: center;
 }
 
 p {
   font-size: 20px;
-  font-family: sans-serif;
   line-height: 1.5;
 }
 
 li {
   font-size: 18px;
-  font-family: sans-serif;
+}
+
+/* footer p {
+  font-size: 15px;
+} */
+
+#copyright {
+  font-size: 15px;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* We should insert a "#" at the beginning of the id name for the selector. */
+#author {
+  font-style: italic;
+}
+
+/* We should insert a "." at the beginning of the class name for the selector. */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related-post {
+  list-style: none;
 }
