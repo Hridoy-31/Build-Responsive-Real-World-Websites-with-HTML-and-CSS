@@ -82,3 +82,68 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* This is called "Pseudo Classes".*/
+/* "li:first-child" means that select the <li> elements that are the first
+   <li> element of their parent tag.*/
+li:first-child {
+  font-weight: bold;
+}
+
+/* "li:last-child" means that select the <li> elements that are the last
+   <li> element of their parent tag.*/
+li:last-child {
+  font-style: italic;
+}
+
+/* "li:nth-child(2)" means that select the <li> elements that are the second
+   <li> element of their parent tag.*/
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* "li:nth-child(odd)" means that select the <li> elements that are odd
+   <li> elements of their parent tag.*/
+/* li:nth-child(odd) {
+  color: red;
+} */
+
+/* "li:nth-child(even)" means that select the <li> elements that are even
+   <li> elements of their parent tag.*/
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* "article p:first-child" will not work. Because, in our html file, the first child in the
+   <article> tag is the <header> tag. */
+
+/* "article p:last-child" will work. Because, in our html file, the last child in the
+   <article> tag is the <p> tag. */
+/* article p:last-child {
+  color: red;
+} */
+
+/* This will customize the <a> tags that are consisted with href attribute. */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
