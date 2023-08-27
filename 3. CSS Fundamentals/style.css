@@ -1,11 +1,20 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* This is an universal selector. The customizations in this selector is applied in
+   all other elements in html if not overridden. */
+/* * {
+  border-top: 10px solid #1098ad;
+} */
+
+body {
+  color: #444;
   font-family: sans-serif;
-  color: #444444;
+
+  /* Only text based customizations are able to inherited from parent selector.
+     like, font-size, color, font-family, text-align etc. can be inherited from
+     parent selector.  */
+  /* Here, border-top will not be inherited. Because it is not a text based
+     customization. So, it will only be at the top of the body once and never appear
+     in the other parts. */
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -164,3 +173,7 @@ a:active {
 footer p {
   color: green !important;
 } */
+
+nav {
+  font-size: 18px;
+}
