@@ -1,8 +1,10 @@
 /* This is an universal selector. The customizations in this selector is applied in
    all other elements in html if not overridden. */
-/* * {
-  border-top: 10px solid #1098ad;
-} */
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
 
 body {
   color: #444;
@@ -31,10 +33,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -45,10 +50,12 @@ h4 {
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* footer p {
@@ -84,12 +91,40 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+
+  /* we can use double values in padding properties. The first value will be considered as
+     top and bottom padding, the second value will be considered as left and right padding. */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-image {
+  /* width: 100%; means that the width of the image will set to the width of it's parent */
+  width: 100%;
+  /* We can use "auto" for height. Because initially a height size was given in index.html.
+     so, we can use auto that will keep the aspect ratio of the image to the original.
+     If, height size was not given in the html, then we have to provide size here. */
+  height: auto;
+}
+
+article {
+  margin-bottom: 60px;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
 /* .first-li {
@@ -107,6 +142,8 @@ li:first-child {
    <li> element of their parent tag.*/
 li:last-child {
   font-style: italic;
+  /* When we use 0, we don't use any unit (e.g: px) */
+  margin-bottom: 0;
 }
 
 /* "li:nth-child(2)" means that select the <li> elements that are the second
@@ -176,4 +213,10 @@ footer p {
 
 nav {
   font-size: 18px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
