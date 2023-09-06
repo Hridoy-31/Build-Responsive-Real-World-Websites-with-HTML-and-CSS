@@ -17,6 +17,7 @@ body {
      customization. So, it will only be at the top of the body once and never appear
      in the other parts. */
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 h1,
@@ -51,11 +52,13 @@ p {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 li {
   font-size: 18px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 /* footer p {
@@ -99,16 +102,18 @@ li {
      top and bottom padding, the second value will be considered as left and right padding. */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 .post-image {
@@ -224,4 +229,23 @@ ul,
 ol {
   margin-left: 50px;
   margin-bottom: 20px;
+}
+
+nav a:link {
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* We can write pseudo classes as a chain like ":link:last-child" */
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
