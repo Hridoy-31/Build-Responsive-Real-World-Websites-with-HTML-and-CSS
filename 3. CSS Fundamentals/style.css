@@ -249,3 +249,45 @@ button {
   bottom: 50px;
   right: 50px;
 }
+
+/* To use pseudo elements, double colons are used. */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-size: 60px;
+} */
+
+/* p::first-line {
+  color: red;
+} */
+
+/* Adjacent selectors are written with a + between two adjacent tags.
+   Here, customizations only applied to the very first <p> tag that 
+   are immediately after the <h3> tag */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  /* background-color: orangered; */
+  position: relative;
+}
+
+h2::after {
+  /* Content should be given always. If we don't want to give it a name
+     or something, we can initialize it with empty string (""). But
+     content should be initialized everytime. */
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
