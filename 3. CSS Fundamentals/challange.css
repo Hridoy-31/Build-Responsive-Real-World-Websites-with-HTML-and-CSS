@@ -22,6 +22,20 @@ h2 {
   padding: 15px;
 }
 
+h2::before {
+  content: "Sale";
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
 h4 {
   font-size: 16px;
   margin-top: 30px;
@@ -32,6 +46,7 @@ h4 {
   border: 4px solid black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .price {
@@ -49,6 +64,11 @@ h4 {
   margin-bottom: 20px;
 }
 
+.more-info {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 a:link,
 a:visited {
   color: black;
@@ -57,6 +77,37 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box-black {
+  background-color: #000;
+}
+
+.box-blue {
+  background-color: #2f6ee2;
+}
+
+.box-red {
+  background-color: #ec2f2f;
+}
+
+.box-yellow {
+  background-color: #f0bf1e;
+}
+
+.box-green {
+  background-color: #90cc20;
+}
+
+.box-brown {
+  background-color: #885214;
 }
 
 ul {
