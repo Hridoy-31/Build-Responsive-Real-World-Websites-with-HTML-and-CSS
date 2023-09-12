@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+h2,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  background-color: #f7f7f7;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+h2::before {
+  content: "Sale";
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.container {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.price {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.free-shipping {
+  font-size: 12px;
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.more-info {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box-black {
+  background-color: #000;
+}
+
+.box-blue {
+  background-color: #2f6ee2;
+}
+
+.box-red {
+  background-color: #ec2f2f;
+}
+
+.box-yellow {
+  background-color: #f0bf1e;
+}
+
+.box-green {
+  background-color: #90cc20;
+}
+
+.box-brown {
+  background-color: #885214;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+button {
+  width: 825px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border-top: 4px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 15px;
+  margin-top: 0;
+
+  /* cursor: pointer; means that the mouse pointer will turn into a hand when
+     hovered over the button. */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* li:last-child {
+  margin-bottom: 0;
+} */
