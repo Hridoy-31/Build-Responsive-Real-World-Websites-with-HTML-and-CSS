@@ -312,3 +312,13 @@ h1 {
 nav {
   float: right;
 }
+
+/* .clear {
+  clear: both;
+} */
+
+.main-header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
