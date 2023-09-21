@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,7 +39,6 @@ h2::before {
 
 h4 {
   font-size: 16px;
-  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -53,6 +53,7 @@ h4 {
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 0;
+  float: left;
 }
 
 .free-shipping {
@@ -60,8 +61,14 @@ h4 {
   color: #777;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 8px;
   margin-bottom: 20px;
+  float: right;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
 }
 
 .more-info {
@@ -116,7 +123,7 @@ ul {
 }
 
 button {
-  width: 825px;
+  width: 100%;
   font-size: 20px;
   text-transform: uppercase;
   background-color: black;
@@ -145,3 +152,21 @@ li {
 /* li:last-child {
   margin-bottom: 0;
 } */
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+
+.shoe-image {
+  float: left;
+  margin-right: 40px;
+}
