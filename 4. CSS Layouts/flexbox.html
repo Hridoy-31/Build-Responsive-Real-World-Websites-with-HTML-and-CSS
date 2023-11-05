@@ -51,7 +51,17 @@
            space-between: positions the elements throughout the whole flexbox in a way
            such that all the elements have same amount of spaces between them.*/
         justify-content: flex-start;
-        gap: 30px;
+        gap: 10px;
+      }
+
+      .el {
+        /* DEFAULT:
+           flex-grow: 0;
+           flex-shrink: 1;
+           flex-basis: auto; */
+
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1;
       }
 
       .el--1 {
@@ -60,6 +70,7 @@
            after the last element (which is element 4), we have to provide a value 
            higher than the value of order of the last element (element 4). */
         /* order: 2; */
+        /* flex-grow: 3; */
       }
 
       .el--5 {
