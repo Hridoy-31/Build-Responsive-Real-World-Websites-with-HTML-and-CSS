@@ -397,6 +397,6 @@ aside {
 }
 
 article {
-  flex: 0 0 825px;
+  flex: 1;
   margin-bottom: 0;
 }
