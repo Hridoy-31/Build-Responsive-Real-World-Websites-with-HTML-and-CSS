@@ -17,7 +17,7 @@
         /* If we put explicit height on a grid item, all the grid items that are
            in the row that contains that explicit heighted grid item will have the
            same height. */
-        /* height: 150px; */
+        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -47,11 +47,38 @@
         /* grid-template-columns: 1fr 1fr 1fr auto; */
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
-        height: 500px;
+        /* height: 500px; */
 
         /* gap: 30px; */
-        column-gap: 30px;
-        row-gap: 60px;
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      .el--8 {
+        /* grid-column: <starting grid number of the column> / <ending grid number of the column> */
+        grid-column: 2 / 3;
+        /* grid-row: <starting grid number of the row> / <ending grid number of the row> */
+        grid-row: 1 / 2;
+      }
+
+      .el--2 {
+        /* If we span only one cell, then it is enough to write 
+           grid-column: 1; 
+           rather than
+           grid-column: 1 / 2; */
+        grid-column: 1 / 2;
+        /* Similarly for row,
+           grid-row: 2; */
+        grid-row: 2 / 3;
+
+        /* grid-column: 1 / span 3; is same as grid-column: 1 / 4; */
+        /* grid-column: 1 / span 3; */
+
+        /* If we want a grid element to span the whole row, we can write:
+           grid-column: 1 / -1; */
+        grid-column: 1 / -1;
+
+        /* These same properties can also be added at grid-row */
       }
 
       .container--2 {
