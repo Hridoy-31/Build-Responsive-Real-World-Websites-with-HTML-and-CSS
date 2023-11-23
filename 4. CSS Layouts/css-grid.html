@@ -43,7 +43,8 @@
         margin: 40px;
 
         /* CSS GRID */
-        display: grid;
+        display: none;
+        /* display: grid; */
         /* grid-template-columns: 1fr 1fr 1fr auto; */
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
@@ -83,18 +84,40 @@
 
       .container--2 {
         /* To remove it from the webpage */
-        display: none;
+        /* display: none; */
 
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning grid-item setup inside of the grid container. Because the size of the
+           setup is less than the size of the whole grid container. */
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        align-content: center;
+        /* align-content: end; */
+
+        /* Aligning grid items collectively, not the setup */
+        justify-items: center;
+        align-items: center;
+      }
+
+      /* Aligning selected single grid item */
+      .el--3 {
+        align-self: start;
+        justify-self: center;
       }
     </style>
   </head>
