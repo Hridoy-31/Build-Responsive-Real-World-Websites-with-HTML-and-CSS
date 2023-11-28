@@ -44,8 +44,6 @@ h4 {
 }
 
 .container {
-  /* display: grid; */
-  /* grid-template-columns: 250px 1fr 1fr; */
   border: 4px solid black;
   width: 825px;
   margin: 50px auto;
