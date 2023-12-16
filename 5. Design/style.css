@@ -103,6 +103,12 @@ img {
 
 /* FEATURES */
 .features-icon {
+  /* for setting up color of a outlined logo, use stroke */
+  /* for setting up color of a solid logo, use fill */
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -166,6 +172,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  height: 24px;
+  width: 24px;
 }
 
 .chair-price {
