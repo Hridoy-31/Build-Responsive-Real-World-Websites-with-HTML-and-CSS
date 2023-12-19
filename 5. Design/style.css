@@ -89,6 +89,9 @@ h1 {
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 24px;
+
+  /* text-shadow: <horizontal shading> <vertical shading> <blurness of the shadow> <color>*/
+  /* text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .header-text {
@@ -153,6 +156,12 @@ img {
 h3 {
   font-size: 20px;
   margin-bottom: 24px;
+}
+
+.chair {
+  /* box-shadow: <horizontal shading> <vertical shading> <blurness of the shading> 
+                 <scaling of the shading> <color of the shading> */
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
 }
 
 .chair-details {
